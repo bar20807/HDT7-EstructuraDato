@@ -4,17 +4,17 @@ import java.io.File;
 import java.io.FileNotFoundException;
 /**
  * 
- * @author José Rodrigo Barrera García Carnet: 20807 
+ * @author JosÃ© Rodrigo Barrera GarcÃ­a Carnet: 20807 
  * Universidad del Valle de Guatemala
  * Cada uno de los codigos fueron tomados encuenta de los ejemplos brindados por Douglas
- *
+ *Al igual que cada uno de los archivos de texto colocados en esta hoja de trabajo
  */
 public class TraductorMain {
 	
 	/*Declaramos de manera publica las variables de las cuales
 	 * nos serviran para almacenar el tipo de idioma en el que se 
 	 * encuentra el texto original, y en donde el usuario indicara a que 
-	 * idioma se va a traducir. Dichos valores serán llevados a ComparableWords
+	 * idioma se va a traducir. Dichos valores serÃ¡n llevados a ComparableWords
 	 * */
     public static String Idioma;
     public static String IdiomaTraducido;
@@ -28,7 +28,7 @@ public class TraductorMain {
         boolean Iterador = false;
         boolean Iterador2=false;
         
-        /* while que nos servirá para controlar el primer menú
+        /* while que nos servirÃ¡ para controlar el primer menÃº
          * en donde el usuario ingresa en que idioma se encuentra inicialmente el archivo 
          * de texto.
          */
@@ -37,7 +37,7 @@ public class TraductorMain {
         		 
         		System.out.println("Bienvenido a mi traductor por medio de arboles :D\n");
         	     System.out.println("Ingrese el idioma en el que se encuentra inicialmente el texto: ");
-        	     System.out.println("\n1 Ingles\n2 Español\n3 Frances");
+        	     System.out.println("\n1 Ingles\n2 EspaÃ±ol\n3 Frances");
         	        
                 opciones=entrada.nextInt();
             switch(opciones) {
@@ -46,14 +46,14 @@ public class TraductorMain {
             		Iterador=true;
             		break;
             	case 2:
-            		Idioma="español"; //Por medio de Switch tomamos la opción que ingrese el usuario y la almacenamos en una variable
+            		Idioma="espaÃ±ol"; //Por medio de Switch tomamos la opciÃ³n que ingrese el usuario y la almacenamos en una variable
             		Iterador=true;
             		break;
             	case 3:
             		Idioma="frances";
             		Iterador=true;
             	default:
-            		System.out.println("Lo sentimos, sobrepaso el número de opciones");
+            		System.out.println("Lo sentimos, sobrepaso el nÃºmero de opciones");
             		break;
             		}
              
@@ -70,13 +70,13 @@ public class TraductorMain {
         entrada.nextLine();
         Iterador2=false;
         
-        /*While que nos servira para controlar el segundo menú en donde el usuario deberá 
-         * elegir la opción del idioma al que desea traducir el texto.
+        /*While que nos servira para controlar el segundo menÃº en donde el usuario deberÃ¡ 
+         * elegir la opciÃ³n del idioma al que desea traducir el texto.
          */
         while (!Iterador2){
         	try {
-        	     System.out.println("Ingrese una opción a la cual desea traducir el texto: ");
-        	     System.out.println("\n1 Ingles\n2 Español\n3 Frances");
+        	     System.out.println("Ingrese una opciÃ³n a la cual desea traducir el texto: ");
+        	     System.out.println("\n1 Ingles\n2 EspaÃ±ol\n3 Frances");
         	        
                 opciones2=entrada.nextInt();
             switch(opciones2) {
@@ -85,7 +85,7 @@ public class TraductorMain {
             		Iterador2=true;
             		break;
             	case 2:
-            		IdiomaTraducido="español";
+            		IdiomaTraducido="espaÃ±ol";
             		Iterador2=true;
             		break;
             	case 3:
@@ -93,7 +93,7 @@ public class TraductorMain {
             		Iterador2=true;
             		break;
             	default:
-            		System.out.println("Lo sentimos, sobrepaso el número de opciones");
+            		System.out.println("Lo sentimos, sobrepaso el nÃºmero de opciones");
             		break;
             		}
              
